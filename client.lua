@@ -8,8 +8,8 @@ local function Subtitle(text, time)
     EndTextCommandPrint(time and math.ceil(time) or 0, true)
 end
 
-RegisterNetEvent("mth-cinematic:start")
-AddEventHandler("mth-cinematic:start", function()
+RegisterNetEvent("ff-cinematic:start")
+AddEventHandler("ff-cinematic:start", function()
     Citizen.CreateThread(function()
         while inCinematic do
             Wait(100) -- Reduce to 10 updates per second
@@ -64,5 +64,5 @@ AddEventHandler("mth-cinematic:start", function()
 end)
 
 RegisterCommand("cinematic", function()
-    TriggerEvent("mth-cinematic:start")
+    TriggerEvent("ff-cinematic:start")
 end)

@@ -12,7 +12,7 @@ RegisterNetEvent("mth-cinematic:start")
 AddEventHandler("mth-cinematic:start", function()
     Citizen.CreateThread(function()
         while inCinematic do
-            Wait(0)
+            Wait(100) -- Reduce to 10 updates per second
             DisableAllControlActions(0)
             SetWeatherTypeNow("EXTRASUNNY")
         end

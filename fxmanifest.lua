@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-name "mth-cinematic"
+name "ff-cinematic"
 description "Script that allows you to create and play a custom introduction cinematic"
-author "Mathu_lmn"
+author "Floo OnFire"
 version "1.0.0"
 
 client_scripts {
